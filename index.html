@@ -20,6 +20,20 @@
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
+        .box {
+          position: relative;
+        }
+        .box::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 16px;
+background: rgba(19, 19, 24, 0.50);
+z-index: 0;
+        }
     </style>
     <script>
         /** @type {import('tailwindcss').Config} */
@@ -151,20 +165,20 @@ module.exports = {
                     <p class="text-sm lg:text-base text-[#13131899] max-w-[607px] mx-auto mt-4">Different parts of a fitness routine, focusing on specific muscle groups or types of exercises.</p>
                 </div>
                 <div class="mt-5 text-white grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div class="p-6 lg:p-10 rounded-xl lg:rounded-2xl bg-[url('./Images/2.png')] bg-no-repeat bg-cover">
-                        <h2 class="font-extrabold text-xl lg:text-3xl ">Junior Program</h2>
-                        <p class="text-sm lg:text-base mt-3 lg:mt-4 mb-5 lg:mb-6">Offering work experience opportunities for students or early-career individuals to explore different professions.</p>
-                        <button class="btn bg-[#FF4240] text-white  hover:bg-[#f33f3c]">Register Now</button>
+                    <div class="box p-6 lg:p-10 rounded-xl lg:rounded-2xl bg-[url('./Images/2.png')] bg-no-repeat bg-cover">
+                        <h2 class="z-10 relative font-extrabold text-xl lg:text-3xl ">Junior Program</h2>
+                        <p class="z-10 relative text-sm lg:text-base mt-3 lg:mt-4 mb-5 lg:mb-6">Offering work experience opportunities for students or early-career individuals to explore different professions.</p>
+                        <button class="z-10 relative btn bg-[#FF4240] text-white  hover:bg-[#f33f3c]">Register Now</button>
                     </div>
-                    <div class="p-6 lg:p-10 rounded-xl lg:rounded-2xl bg-[url('./Images/3.png')] bg-no-repeat bg-cover">
-                        <h2 class="font-extrabold text-xl lg:text-3xl ">Teenager Program</h2>
-                        <p class="text-sm lg:text-base mt-3 lg:mt-4 mb-5 lg:mb-6">Focuses on developing leadership skills, communication abilities, and teamwork among teenagers.</p>
-                        <button class="btn bg-[#FF4240] text-white  hover:bg-[#f33f3c]">Register Now</button>
+                    <div class=" box p-6 lg:p-10 rounded-xl lg:rounded-2xl bg-[url('./Images/3.png')] bg-no-repeat bg-cover">
+                        <h2 class="z-10 relative font-extrabold text-xl lg:text-3xl ">Teenager Program</h2>
+                        <p class="z-10 relative text-sm lg:text-base mt-3 lg:mt-4 mb-5 lg:mb-6">Focuses on developing leadership skills, communication abilities, and teamwork among teenagers.</p>
+                        <button class="z-10 relative btn bg-[#FF4240] text-white  hover:bg-[#f33f3c]">Register Now</button>
                     </div>
-                    <div class="p-6 lg:p-10 rounded-xl lg:rounded-2xl bg-[url('./Images/4.png')] bg-no-repeat bg-cover lg:col-span-2 ">
-                        <h2 class="font-extrabold text-xl lg:text-3xl lg:pt-52">Teenager ProgramProfessional Program</h2>
-                        <p class="text-sm lg:text-base mt-3 lg:mt-4 mb-5 lg:mb-6">Offering work experience opportunities for students or early-career individuals to explore different professions.</p>
-                        <button class="btn bg-[#FF4240] text-white  hover:bg-[#f33f3c]">Register Now</button>
+                    <div class="box p-6 lg:p-10 rounded-xl lg:rounded-2xl bg-[url('./Images/4.png')] bg-no-repeat bg-cover lg:col-span-2 ">
+                        <h2 class="z-10 relative font-extrabold text-xl lg:text-3xl lg:pt-52">Teenager ProgramProfessional Program</h2>
+                        <p class="z-10 relative text-sm lg:text-base mt-3 lg:mt-4 mb-5 lg:mb-6">Offering work experience opportunities for students or early-career individuals to explore different professions.</p>
+                        <button class="z-10 relative btn bg-[#FF4240] text-white  hover:bg-[#f33f3c]">Register Now</button>
                     </div>
                 </div>
             </div>
